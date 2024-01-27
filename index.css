@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+}
+.navOne{
+    background-color: rgb(63, 61, 61);
+    padding: 0.9%; 
+    position: fixed;
+    right: 0; 
+    left: 0; 
+    z-index: 1;
+}
+.navOne li{
+    font-size: 11px;
+    list-style: none;
+}
+.items ul{
+    color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+    flex-wrap: wrap;
+}
+i{
+    color: rgb(142, 142, 146);
+    font-size: 12px;
+}
+.hide{
+    display: none;
+}
+
+#hero, #heroTwo, #heroOne{
+    background-image: url(./img/hero_iphone15pro__i70z9oz3hj2i_large.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+}
+#heroTwo{
+    background-image: url(./img/hero_iphone15_announce__uuemlcwczn6u_large.jpg);
+}
+#heroOne{
+    background-image: url(./img/herovision.jpg);
+}
+#heroOne img{
+    padding-top: 23%;
+    /* width: 180px; */
+}
+.heroText, .heroTwoText, #iWatchsect, .Grid{
+    display: grid;
+    place-items: center;
+    color: white;
+    border-top: 12px solid white;
+    text-align: center;
+}
+.heroOneText, #heroOne img{
+    display: grid;
+    place-items: center;
+    color: black;
+}
+.heroTwoText{
+    color: black;
+   
+}
+.heroText h1, .heroTwoText h1{
+    font-size: 3.2rem;
+    font-size: bold;
+    padding-top: 3%;
+}
+.heroText p, .heroTwoText p, .heroOneText p{
+    font-size: 1.2rem;
+}
+.heroText a, .heroOneText a, .heroTwoText a, .MacText a, .flex a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+.iWatch, .Grid{
+    max-width: 98%;
+    margin: 0 auto;
+    display: Grid;
+    grid-template-columns: repeat(2, 50%);
+    place-content: center;
+    /* border-top: 10px solid white; */
+    gap: 1%;
+}
+#leftSide, #SideRight{
+    background-image: url(./img/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 60vh;
+}
+#SideRight{
+    background-image: url(./img/promo_apple_watch_ultra2_order__dyxqj5ia98om_large.jpg);
+}  
+#Sidleft, #rightSide{
+    background-image: url(./img/promo_mbp__ek7p477bkp6q_large.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 60vh;
+}
+#rightSide{
+    background-image: url(./img/promo__sw58lbodkmqq_large.jpg);
+}
+#leftSide p, #SideRight p{
+    color: white;
+    margin: 10px;
+}
+ .MacText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#Sidleft .MacText h1,.MacText img{
+    margin-top: 5%;
+}
+#SideRight p, .flex a{
+    color: black;
+}
+footer p :hover{
+    text-decoration: underline;
+    cursor: default;
+}
+.MacText img{
+    width: 120px;
+}
+#Sidleft .MacText p{
+    font-size: 18px;
+}
+#left, #right{
+    background-image: url(./img/tile__cauwwcyyn9hy_large.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 60vh;
+}
+#right{
+    background-image: url(./img/promo_iphone_tradein__bugw15ka691e_large.jpg);   
+}
+.carousel-inner img{
+    width: 90%;
+    height: 70vh;
+    object-fit: cover;
+}
+#carousel{
+    z-index: 0;
+}
+footer{
+    background-color: #f5f5f7;
+    padding: 2% 0; 
+}
+footer li, .li{
+    line-height: 15px;
+}
+.footerText{
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.footerflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.footerWrap{
+    margin-top: 3%;
+    border-top: 1px solid rgb(71, 70, 70) ;
+    border-bottom: 1px solid rgb(71, 70, 70);  
+}
+#accordion{
+    display: none;
+}
+
+@media (max-width: 1231px ) {
+    .footerText{
+        max-width: 90%;
+        margin: 0 auto;
+    }  
+}
+@media (max-width: 1099px ) {
+    #heroOne img{
+        padding-top: 30%;
+    }     
+}
+@media (max-width: 926px ) {
+    .iWatch, .Grid{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+    }  
+}
+@media (max-width: 760px ) {
+    .heroText h1, .heroTwoText h1{
+        font-size: 2.5rem;
+    } 
+}
+@media (max-width: 789px ) {
+    .footerText{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .footerflex{
+        display: none;
+    }
+    #accordion{
+        display: block;
+        font-size: 11px;
+    }
+    .accordion-button{
+        font-size: 10px;
+    }
+    #heroOne img{
+        padding-top: 38%;
+    } 
+}
+@media (max-width: 800px ){
+    .hide{
+        display: block;
+        font-size: 18px;
+    }
+    .items li, .items .hid{
+        display: none;
+    }
+    .items ul{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .items{
+        display: flex;
+    }
+}
+@media (max-width: 700px ){
+    #heroOne img{
+        padding-top: 50%;
+    }
+}
+@media (max-width: 480px ){
+    #heroOne img{
+        padding-top: 60%;
+    }
+}
+@media (max-width: 350px ){
+    #heroOne img{
+        padding-top: 75%;
+    }
+    .heroOneText p{
+        text-align: center;
+    }
+}
